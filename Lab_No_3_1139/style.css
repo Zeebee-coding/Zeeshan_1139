@@ -1,0 +1,126 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+}
+
+#container img{
+    width: 100%;
+    height: 400px;
+}
+#container h1{
+    text-align:center;
+    color: #1dce4f;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#nav-bar, #left-nav{
+    width: 100%;
+    background-color: rgb(107, 103, 103);
+
+}
+
+#nav-bar ul, #left-nav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#nav-bar li{
+    width: 20%;
+    text-align: center;
+}
+#left-nav li{
+    text-align: center;
+}
+
+.active1{
+    color: rgb(44, 43, 43) !important;
+    background-color: #89e4a2 !important;
+}
+.active2{
+    color: aliceblue !important;
+    background-color: #1dce4f !important;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #1dce4f;
+    padding: 20px 20px;
+    display: block;
+}
+#left-nav a{
+    text-decoration: none;
+    color: black;
+    background-color: #89e4a2 ;
+    padding: 20px 20px;
+    display: block;
+}
+#nav-bar a:hover{
+    color: rgb(44, 43, 43);
+    background-color: #89e4a2;
+}
+#left-nav a:hover{
+    background-color: #1dce4f;
+    color: rgb(44, 43, 43);
+}
+
+#left-nav{
+    width: 20% !important;
+    flex: 0.35;
+}
+
+#main-content{
+    width: 78%;
+    flex: 0.5;
+    margin-left: 15px;
+}
+
+#main-content p{
+    font-size: 20px;
+}
+.left-main{
+    display:flex;
+}
+
+/* @keyframes mymove {
+    from {width: 20%; transform: rotate(0deg);}
+    to {width: 40%; transform: rotate(180deg);}
+  }
+
+@media screen and (max-width: 480px) {
+    #main-content img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 481px) {
+    #main-content img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 721px) {
+    #main-content img{
+        width: 30%;
+    }
+}
+
+#main-content img:hover{
+    filter: grayscale(100%);
+    transform: rotate(180deg);
+    width: 23%;
+} */

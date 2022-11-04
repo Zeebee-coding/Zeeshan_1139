@@ -1,0 +1,220 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: block;
+  overflow-x: hidden;
+
+}
+
+.transformed_div {
+  margin-top: 100px;
+  margin-left: 100px;
+  background-color: yellow;
+  width: 400px;
+  height: auto;
+  float: left;
+  border: 1px solid black;
+}
+.hide_div {
+  display: none;
+  margin-top: 100px;
+  margin-left: 100px;
+  float: left;
+  background-color: yellow;
+  width: 400px;
+  height: auto;
+  border: 1px solid black;
+ 
+}
+.transformed_div:hover{
+  transform: rotate(180deg);
+}
+.clear {
+  clear: both;
+}
+.container{
+    height: 350px;
+    width: 100%;
+}
+.animated_div {
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 2s infinite;
+  animation-delay: 1s;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100px;
+  }
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 45deg;
+  }
+  50% {
+    rotate: 90deg;
+  }
+  75% {
+    rotate: 135deg;
+  }
+  100% {
+    rotate: 180deg;
+    width: 200px;
+    height: 200px;
+  }
+}
+.grayscale-pic {
+  filter: grayscale(100%);
+  
+}
+.blur-pic {
+  filter: blur(100%);
+}
+.opacity-pic {
+  filter: opacity(30%);
+}
+.image-gallery {
+  margin-top: 100px ;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+.card {
+  height: 20%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(162, 101, 21);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.card p {
+  text-align: center;
+}
+.shadow{
+  color: rgb(77, 77, 77);
+  text-shadow: 5px 5px  8px rgb(40, 20, 170);
+}
+.shadow-box{
+  margin-left: 5em;
+  height: 20%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(162, 101, 21);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-shadow: 2px 1px 5px  10px rgb(57, 43, 15);
+}
+
+@media only screen and (max-width: 300px) {
+    .transformed_div{
+        width: 100px;
+    }
+    .hide_div{
+        width: 100px;
+    }
+    .image-gallery {
+        background: red;   
+    }
+    .card {
+        height: 60%;
+        width: 60%;
+      }
+  }
+
+@media only screen and (min-width: 300px) {
+    .transformed_div{
+        width: 100px;
+    }
+    .hide_div{
+        width: 100px;
+    }
+    .image-gallery {
+        background: paleturquoise;   
+    }
+    .card {
+        height: 60%;
+        width: 60%;
+      }
+  }
+ 
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .transformed_div{
+        width: 200px;
+    }
+    .hide_div{
+        width: 200px;
+    }
+    .image-gallery {
+        background: green;   
+    }
+    .card {
+        height: 40%;
+        width: 40%;
+      }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .transformed_div{
+        width: 200px;
+    }
+    .hide_div{
+        width: 200px;
+    }
+    .image-gallery {background: blue;}
+    .card {
+        height: 40%;
+        width: 40%;
+        padding: 0;
+      }
+      .card>img{
+        object-fit:fill;
+      }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .transformed_div{
+        width: 400px;
+    }
+    .hide_div{
+        width: 400px;
+    }
+    .image-gallery {background: orange;}
+    .card {
+        height: 20%;
+        width: 20%;
+      }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .transformed_div{
+        width: 400px;
+    }
+    .hide_div{
+        width: 400px;
+    }
+    .image-gallery {background: pink;}
+    .card {
+        height: 20%;
+        width: 20%;
+      }
+  }
